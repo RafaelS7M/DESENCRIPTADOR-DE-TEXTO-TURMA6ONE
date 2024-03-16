@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./imagem/top link.png"
+      type="imagem/x-icon"
+    />
+    <title>Encriptador de Textos</title>
+
+    <script
+      src="https://kit.fontawesome.com/4d63ed8f35.js" crossorigin
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/animacao.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+
+    <main class="container">
+
+      <header class="header-btn">
+        <img src="imagem/logo site.png" class="logo-title" />
+      </header>
+
+
+      <div class="section-container-main">
+        <div class="section-text-btn">
+          <span class="alert bounce-in-top slide-in-top">
+            <img src="imagem/icone-perdeu.png" class="icon-head" />
+            <img src="imagem/icone-acertou.png" class="icon-head" />
+            Alerta
+          </span>
+          <div class="text-write">
+            <textarea
+              id="inputText"
+              class="input-text"
+              type="text"
+              placeholder="Insira o texto aqui"
+              textarea
+            ></textarea>
+          </div>
+          <p class="text-limit">
+            <strong>Nao é permitido letras maiusculas, com acentos e números</strong>
+          </p>
+
+          <div class="buttons">
+            <button class="btn" id="encript" type="submit">Encriptar</button>
+            <button
+              onclick="decryptText()"
+              class="btn"
+              id="decrypt"
+              type="submit"
+            >
+              Desencriptar
+            </button>
+            <button
+              onclick="copyToClipBoard()"
+              class="fa-solid fa-copy btn"
+              id="copy-text"
+              type="button"
+            ></button>
+          </div>
+        </div>
+
+        <div class="input-btn-content">
+          <div class="text-box disabled">
+            <p id="text-result"></p>
+          </div>
+          <div class="alert-message-box">
+            <a href="https://www.instagram.com/rafaelmagalhx/?next=%2F">
+              <img src="imagem/2.png" id="descubra-img" class="busca" />
+            </a>
+            <p class="alert-message">Nenhuma mensagem foi encontrada</p>
+            <p class="alert-message2">
+              Insira uma mensagem que deseja encriptar ou Desencriptar
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer__content-copyright">
+          <p>
+            Copyright © 2024 | Coded with 
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+            <a
+              href="https://www.linkedin.com/in/rafael-magalhães-sousa"
+              target="_blank"
+            >
+              Rafael Magalhães
+            </a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
