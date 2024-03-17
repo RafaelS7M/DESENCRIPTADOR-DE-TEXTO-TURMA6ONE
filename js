@@ -3,6 +3,7 @@ const textBox = document.querySelector(".text-box");
 const textAlert = document.querySelector(".alert");
 const btnEncript = document.getElementById("encript");
 
+console.log("Ao clicar na logo do desencriptador você consegue atualizar a página sem guardar métodos no cache  :) ");
 
 const notification = (text, img) => {
   const imgAlert = document.createElement("img");
